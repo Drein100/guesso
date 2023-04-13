@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cell {
+    @apply py-2 px-4 border border-gray-300 text-lg;
+  }
+
+  .font-Poppins {
+    font-family: "Poppins", serif;
+  }
