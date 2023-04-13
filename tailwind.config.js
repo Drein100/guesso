@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  pathPrefix: '/guesso',
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
