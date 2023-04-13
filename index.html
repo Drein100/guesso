@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Guess the Number</title>
+    <title>Guesso!</title>
     <link rel="stylesheet" href="./output.css">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -12,20 +12,19 @@
         background-color: rgb(236, 236, 236);
         border-collapse: collapse;
         overflow: hidden;
-        border: 1px solid gray;
-        border-radius: 1px;
-
+        border-radius: 5px;
+        border: 1px solid grey;
       }
       th {
         background-color: rgb(18, 161, 18);
         color: white;
         padding: 8px;
         width: 200px;
-        border: 1px solid gray;
+        border: 1px solid grey;
         font-size: large;
       }
       td {
-        border: 1px solid gray;
+        border: 1px solid grey;
         padding: 8px;
         font-weight: bold;
         font-size: x-large;
@@ -74,8 +73,11 @@
     </style>
   </head>
   <body class="font-poppins bg-slate-200" >
-    <h1 class="text-center text-5xl my-10 font-bold">Guesso!</h1>
-    <button id="infoBtn" class="block mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-6 rounded">Before the game</button>
+    <h1 class=" sm:text-5xl text-center text-6xl mt-10 font-bold">Guesso!</h1>
+    <div class=" mt-2 mb-5 flex justify-center items-center text-sm font-medium opacity-50">
+      prepared by atakan karatas
+    </div>
+    <button id="infoBtn" class="block mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-10 mb-6 rounded">How to play ?</button>
     <div id="info" class="popup hidden">
       <div class="popup__content">
         <p class="mb-6 text-center">Welcome the <span class="font-bold">Guesso!</span></p>
@@ -113,12 +115,7 @@
           <p>Please enter a <span class="font-bold">4-digit number</span> with no zeros or repeated digits!</p>
           <button class="popup__button-2">OK</button>
         </div>
-      </div>
- 
-      <div class="fixed bottom-0 left-0 w-full h-12 bg-gray-100 flex justify-center items-center text-sm font-semibold">
-        prepared by atakan karatas
-      </div>
-      
+      </div>      
     </body>
     <script src="./app.js"></script>
 </html>
